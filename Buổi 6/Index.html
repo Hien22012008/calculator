@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 6-Javascript</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Javascript cơ bản</h1>
+    <ul>
+        <li>Tổng quan về JS</li>
+        <li>Khai báo biến</li>
+        <li>Kiểu dữ liệu</li>
+        <li>Các toán tử trong JS</li>
+        <li>Câu lệnh điều kiện (Câu lệnh rẽ nhánh)</li>
+    </ul>
+    <script>
+       // Những hàm có sẵn(built-in function) của Js
+//alert("Hello");
+//confirm("Bạn đủ 18 chưa");
+//prompt("Nhập tên");
+//console.log("hello");
+var age = 18;
+const PI = 3.14;
+
+//Kiểu dữ liệu
+var name = "Hiển";
+var classMindx = "JSB01";
+var HienLamBTVN = true;
+
+        var a = 3;
+        var b = 0;
+        var c = -2;
+        var delta = (b * b) - (4 * a * c);
+        var x1 = 0;
+        var x2 = 0;
+        var nghiemKep = 0;
+
+        if (a != 0) {
+            //true
+            console.log("Delta = ", delta);
+            if (delta > 0) {
+                console.log("Phương trình có 2 nghiệm phân biệt !!!");
+                x1 = ((-1 * b) + Math.sqrt(delta)) / (2 * a);
+                x2 = ((-1 * b) - Math.sqrt(delta)) / (2 * a);
+                console.log("x1 = ", x1);
+                console.log("x2 = ", x2);
+            } else if (delta == 0) {
+                console.log("Phương trình có nghiệm kép !!!");
+                nghiemKep = (-1 * b) / (2 * a);
+                console.log("Nghiệm kép là ", nghiemKep);
+            } else if (delta < 0) {
+                console.log("Phương trình vô nghiệm !!!");
+            }
+        } else {
+            //false
+            console.log("A phải khác 0 !!!");
+        }
+
+
+    </script>
+</body>
+</html>

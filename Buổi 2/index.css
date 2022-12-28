@@ -1,0 +1,20 @@
+ body {
+    background-color: rgb(7, 151, 234);
+}
+
+.card {
+    background-color: aliceblue;
+    margin: 200px;
+    margin:30% 30% 30% 30%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.4rem;
+    box-shadow: 5px 5px 5px 5px rgb(59, 58, 58);
+    text-align: center;
+}
+
+.birthday {
+    width: 200px;
+}
+ 
